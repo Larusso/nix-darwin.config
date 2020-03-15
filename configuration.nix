@@ -13,6 +13,7 @@
       pkgs.git
       pkgs.gitAndTools.gh
       pkgs.awscli
+      pkgs.fzf
       pkgs.shellcheck
       pkgs.openssl
       pkgs.coreutils
