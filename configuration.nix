@@ -145,6 +145,12 @@
   programs.zsh.variables.darwin = "$HOME/.nix-defexpr/darwin";
   programs.zsh.variables.nixpkgs = "$HOME/.nix-defexpr/nixpkgs";
 
+  programs.zsh.loginShellInit = ''
+    :r() {
+      gpg-connect-agent reloadagent /bye
+    }
+  '';
+
   environment.variables.LANG = "en_US.UTF-8";
   environment.variables.TERM = "xterm-256color";
 
