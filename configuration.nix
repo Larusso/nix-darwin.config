@@ -12,12 +12,11 @@
       pkgs.curl
       pkgs.git
       pkgs.gitAndTools.gh
-      pkgs.awscli
+      pkgs.git-crypt
       pkgs.fzf
       pkgs.shellcheck
       pkgs.openssl
       pkgs.coreutils
-      pkgs.adoptopenjdk-hotspot-bin-8
       # (import ./my-asdf.nix)
     ];
 
